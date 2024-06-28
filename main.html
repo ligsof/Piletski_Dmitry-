@@ -6,6 +6,38 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>1</h1>
+    <script>
+        let Sname, name, name2, age;
+        do {
+            Sname = prompt('Введите вашу фамилию');
+       }
+        while (!Sname || !Sname.trim());
+        do {
+            name = prompt ('Введите ваше имя');
+       }
+        while (!name || !name.trim()); 
+        do {
+            name2 = prompt('Введите ваше отчество');
+       }
+        while (!name2 || !name2.trim());
+        do {
+            age = parseInt(prompt('Введите ваш возраст'));
+       }
+        while (!age);
+        let isMan = confirm('Ваш пол - мужской?');
+        let ageDays = age * 365; 
+        let age5 = age + 5;
+        let gender = null;
+         if (isMan==true) {gender= 'мужской'}
+            else {gender= 'женский'};
+            let pens = null;
+       if (isMan==true ) {if (age>=65) { pens= 'да'} 
+       else {pens= 'нет'}};
+       if (isMan==false ) {if (age>=55) { pens= 'да'} 
+       else {pens= 'нет'}};
+           
+       alert(`ваше ФИО: ${Sname} ${name} ${name2} \n ваш возраст в годах: ${age}
+           \n ваш возраст в днях: ${ageDays} \n через пять лет вам будет: ${age5} \n ваш пол: ${gender} \n вы на пенсии: ${pens}`);
+</script>
 </body>
 </html>
