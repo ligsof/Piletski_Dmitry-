@@ -6,6 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>1</h1>
+    <script>
+    function vowels(str) {
+        const rusalpha = ['а','е','ё','и','о','у','ы','э','ю','я']; 
+        let count = 0;
+        for (const count1 of str.toLowerCase()) {
+            for (let count2 of rusalpha) {
+                if (count1 === count2){
+                    count++;
+                    break;
+                }
+                
+            }
+            
+        }
+        return count;
+    }
+    const input = prompt('Введите слово');
+    console.log ('количество гласных букв',vowels(input));
+    </script>
 </body>
 </html>
