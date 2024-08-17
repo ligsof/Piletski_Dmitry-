@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N.05vowels</title>
+</head>
+<body>
+    <script>
+        function vowels(str) {
+            const rusalpha = ['а','е','ё','и','о','у','ы','э','ю','я']; 
+            let count = 0;
+            for (const count1 of str.toLowerCase()) {
+                for (let count2 of rusalpha) {
+                    if (count1 === count2){
+                        count++;
+                        break;
+                    }
+                    
+                }
+                
+            }
+            return count;
+        }
+        const input = prompt('Введите слово');
+        console.log ('количество гласных букв',vowels(input));
+        </script>
+</body>
+</html>
