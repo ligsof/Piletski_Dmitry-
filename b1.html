@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getcentry(year) {
+            const century  = Math.ceil (year / 100);
+            return century;
+        }
+         const input = prompt ('введите год');
+         const year = parseInt(input);
+         const century = getcentry(year);
+         console.log (`год ${year} относится к ${century} веку`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function remove(str) {
+  let start = 0;
+  let end = str.length - 1;
+  while (start < str.length && str[start] ==='')
+{start ++;};
+  while (end >= 0 && str[end] == ''){ end--};
+  const trimmed = str.substring (start, end +1);
+  const symbol = '%';
+  return symbol + trimmed + symbol;
+  }
+
+  const input = prompt ( 'введите строку');
+  const result = remove(input);
+  console.log(result);
+
+
+</script>
+</body>
+</html>
